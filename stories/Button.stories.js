@@ -1,5 +1,6 @@
 import '@crowdstrike/glide-core/button.js';
 import { html, nothing } from 'lit';
+import './test.css';
 
 export default {
   title: 'Button',
@@ -12,6 +13,7 @@ export default {
   },
   render: (args) =>
     html` <glide-core-button
+      class="custom-btn"
       size=${args.size}
       variant=${args.variant}
       ?disabled=${args.disabled || nothing}
